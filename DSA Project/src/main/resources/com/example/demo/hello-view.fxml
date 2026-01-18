@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <AnchorPane fx:id="layer" prefHeight="702.0" prefWidth="335.0" style="-fx-background-color: #0598ff;">
+         <children>
+            <ImageView fitHeight="321.0" fitWidth="335.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image_2024-05-25_141907295-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Hyperlink fx:id="fpword1" layoutX="502.0" layoutY="425.0" onAction="#switchToForgotPassword" text="Forgot your Password ?" />
+      <Button fx:id="signupButton1" layoutX="738.0" layoutY="423.0" mnemonicParsing="false" onAction="#switchToSignup" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: transpareent; -fx-background-radius: 50px;" text="SignUp" textFill="#5f7cd3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <HBox fx:id="userHB" layoutX="499.0" layoutY="304.0" prefHeight="40.0" prefWidth="305.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-account-management-logo-user-icon-11562867145a56rus2zwu-removebg-preview.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="uname1" prefHeight="28.0" prefWidth="210.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="passHB" layoutX="499.0" layoutY="372.0" prefHeight="40.0" prefWidth="305.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: E1E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password-148.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <PasswordField fx:id="pword1" prefHeight="28.0" prefWidth="210.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+      </HBox>
+      <Button fx:id="loginButton1" layoutX="527.0" layoutY="492.0" mnemonicParsing="false" onAction="#setLogin" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #0598ff; -fx-background-radius: 50px;" text="LOG IN" textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="userImage1" fitHeight="187.0" fitWidth="243.0" layoutX="531.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WhatsApp%20Image%202024-06-10%20at%2011.30.30%20AM.jpeg" />
+         </image></ImageView>
+      <HBox fx:id="hb1" layoutX="108.0" layoutY="140.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: rgba(0,0,0,0); -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-username-50.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" top="2.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="uname" prefHeight="28.0" prefWidth="200.0" promptText="Username" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" top="2.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hb2" layoutX="108.0" layoutY="200.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="mail" prefHeight="28.0" prefWidth="200.0" promptText="Email" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets left="16.0" top="2.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hb3" layoutX="108.0" layoutY="260.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" top="3.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@phone.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="num" prefHeight="28.0" prefWidth="200.0" promptText="Contact Number" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets left="20.0" top="2.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="hb4" layoutX="108.0" layoutY="320.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-radius: 50px; -fx-border-color: #E1E1E1;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password-148.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="3.0" />
+               </HBox.margin>
+            </ImageView>
+            <PasswordField fx:id="pword" prefHeight="28.0" prefWidth="200.0" promptText="Password" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transpareent;">
+               <HBox.margin>
+                  <Insets left="20.0" top="2.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox fx:id="hb5" layoutX="108.0" layoutY="380.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password-148.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="3.0" />
+               </HBox.margin>
+            </ImageView>
+            <PasswordField fx:id="cpword" prefHeight="28.0" prefWidth="200.0" promptText="Confirm Password" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transpareeent;">
+               <HBox.margin>
+                  <Insets left="20.0" top="2.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox fx:id="hb6" layoutX="108.0" layoutY="440.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-hint-50.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="2.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="hnt" prefHeight="28.0" prefWidth="200.0" promptText="Hint" style="-fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+               <HBox.margin>
+                  <Insets left="20.0" top="2.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="submt" layoutX="130.0" layoutY="520.0" mnemonicParsing="false" onAction="#switchToHello" prefHeight="42.0" prefWidth="257.0" style="-fx-background-color: #0598ff; -fx-background-radius: 50px;" text="SUBMIT" textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="backImage" fitHeight="28.0" fitWidth="29.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@logout.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#gotoLogin" opacity="0.0" prefHeight="42.0" prefWidth="42.0" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
